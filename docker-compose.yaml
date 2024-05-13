@@ -1,0 +1,11 @@
+version: 'latest'
+services:
+  db:
+    image: bitnami/postgresql
+    restart: always
+    environment:
+      - POSTGRESQL_PASSWORD=crud
+      - POSTGRESQL_USERNAME=car
+      - POSTGRESQL_DATABASE=car-crud-db
+    ports:
+      - 5432:5432
